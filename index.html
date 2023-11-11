@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">ERAM</a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="hero">
+            <h4>Heyy!! There</h4>
+            <h1>I 'M <span id="text"></span></h1>
+            <p>Title: Entry-Level IT Professional with Proficiency in HTML, CSS, JavaScript, MongoDB, SQL, Python, C, C++,&nbsp and  Database   Management&nbsp
+
+                Objective:
+                Enthusiastic and detail-oriented IT fresher with foundational knowledge in HTML, CSS, JavaScript, MongoDB, SQL, Python, C, C++, and database management. Eager to contribute to dynamic projects, learn new technologies, and apply acquired skills to drive innovation in the IT sector.
+                
+                Technical Skills:
+                
+                Programming Languages: Python, C, C++
+                Web Technologies: HTML, CSS, JavaScript
+                Database Management: MongoDB, SQL
+                Additional Skills: Familiarity with database concepts, version control (e.g., Git), software development life cycle (SDLC)
+                Academic Qualifications:
+                
+                Bachelor of Technology in [INFORMATION TECHNOLOGY], [MUMBAI University ], [2025]
+                Projects:
+                
+          
+                C/C++ Programming Projects:
+                
+                Implemented various algorithms and data structures using C/C++.
+                Gained hands-on experience in problem-solving and logical thinking.
+                Internship:
+                
+                Completed an internship [or Mention any relevant internship or practical experience] where I applied theoretical knowledge in a practical setting, contributing to real-world projects.
+                Soft Skills:
+                
+                Strong problem-solving abilities
+                Excellent communication and teamwork skills
+                Quick learner with a passion for staying updated on emerging technologies.</p>
+            <div class="social">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <button>Download CV</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+    <script>
+        var typed = new Typed("#text",{
+            strings:["MERN DEVELOPER","PYTHON DEVELOPER","WEB DEVELOPER","SHAIKH ERAM"],
+            typeSpeed:50
+        })
+
+        let menu = document.querySelector(".header ul")
+        let bars = document.querySelector(".header .fa-bars")
+
+        bars.addEventListener("click",function(){
+            menu.classList.toggle("show");
+        })
+
+    </script>
+
+</body>
+</html>
